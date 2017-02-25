@@ -1,5 +1,9 @@
-require "sinatra"
+require 'sinatra'
 
-get '/makers/:nombre' do
-    "Hola " + "#{params[:nombre]}".capitalize
+get '/' do
+    erb :index
+end
+
+post '/saludo' do
+    "Hola #{params[:saludar]}"
 end
