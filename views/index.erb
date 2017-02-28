@@ -1,8 +1,14 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Code</title>
+        <meta charset="utf-8">
+        <title>Couples and Odd</title>
     </head>
     <body>
-        HcUy6Re2LLBRtj
+        <ul>
+            <% (1..50).each do |i| %>
+                <li><%= i % 2 == 0 ? @par : @impar %></li>
+            <% end %>
+        </ul>
     </body>
 </html>
